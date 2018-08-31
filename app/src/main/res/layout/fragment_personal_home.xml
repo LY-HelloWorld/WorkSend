@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="city"
+            type="com.a51zhipaiwang.worksend.Bean.City"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_layout_height"
+            android:background="@color/blue_green"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.a51zhipaiwang.worksend.View.MyLinearlayout
+                android:id="@+id/lv_search"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/lv_personal_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:padding="2dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/personal_search" />
+
+                <EditText
+                    android:cursorVisible="false"
+                    style="@style/edx_bg_common"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:hint="@string/search_work_business"
+                    android:singleLine="true" />
+
+
+            </com.a51zhipaiwang.worksend.View.MyLinearlayout>
+
+            <LinearLayout
+                android:id="@+id/lv_choice_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/personal_location" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="@{city.name}"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/lv_find_work"
+                        style="@style/lv_personal_home"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/personal_find_work" />
+
+                        <TextView
+                            style="@style/tx_personal_home"
+                            android:text="@string/search_work" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/lv_all_time"
+                        style="@style/lv_personal_home">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/personal_all_work" />
+
+                        <TextView
+                            style="@style/tx_personal_home"
+                            android:text="@string/all_work" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/lv_part_time"
+                        style="@style/lv_personal_home">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/personal_part_time_work" />
+
+                        <TextView
+                            style="@style/tx_personal_home"
+                            android:text="@string/part_time_work" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/lv_find_company"
+                        style="@style/lv_personal_home"
+                        android:layout_marginRight="20dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/personal_find_company" />
+
+                        <TextView
+                            style="@style/tx_personal_home"
+                            android:text="@string/search_company" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    style="@style/view_divider_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/personal_home_middle" />
+
+                <Button
+                    android:id="@+id/btn_submit_resume"
+                    style="@style/btn_common_small_corner"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/send_resume" />
+
+                <View
+                    style="@style/view_divider_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_hot_work"
+                        android:layout_width="140dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="40dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/personal_hot_work" />
+
+                    <ImageView
+                        android:id="@+id/img_match"
+                        android:layout_width="140dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/personal_work_match" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/view_divider_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+                <LinearLayout
+                    android:id="@+id/lv_common_sence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tx_title"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/work_common_sence" />
+
+                    <ImageView style="@style/img_title_right_arrow" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/view_divider_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+                <ListView
+                    android:background="@color/white"
+                    android:divider="@color/hui"
+                    android:dividerHeight="1dp"
+                    android:id="@+id/lvi_personal_infomation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

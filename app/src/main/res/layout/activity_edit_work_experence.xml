@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_layout"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tx_title"
+            android:layout_width="wrap_content"
+            android:text="公司名称:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edx_company_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:hint="请输入公司名称"
+            style="@style/edx_resume" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tx_title"
+            android:layout_width="wrap_content"
+            android:text="起始时间:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edx_start_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:hint="请输入时间格式如：2018-01-01"
+            style="@style/edx_resume" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tx_title"
+            android:layout_width="wrap_content"
+            android:text="结束时间:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edx_end_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:hint="请输入时间格式如：2018-01-01"
+            style="@style/edx_resume" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tx_title"
+            android:layout_width="wrap_content"
+            android:text="职\u3000\u3000位:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edx_work"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:hint="请输入职位"
+            style="@style/edx_resume" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tx_title"
+            android:layout_width="wrap_content"
+            android:text="薪资标准:"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:id="@+id/rag_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:textColor="@color/pai_dan_text"
+                android:textSize="11sp"
+                android:id="@+id/rdb_moneyNoLimit"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/radio_bt_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/no_limit" />
+
+
+            <RadioButton
+                android:textColor="@color/pai_dan_text"
+                android:id="@+id/rdb_five"
+                android:textSize="11sp"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/radio_bt_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="3k-5k" />
+
+            <RadioButton
+                android:textColor="@color/pai_dan_text"
+                android:id="@+id/rdb_ten"
+                android:textSize="11sp"
+                android:text="5k-10k"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/radio_bt_bg"
+                android:button="@null"
+                android:gravity="center" />
+
+            <RadioButton
+                android:textColor="@color/pai_dan_text"
+                android:id="@+id/rdb_fifting"
+                android:textSize="11sp"
+                android:layout_marginLeft="-220dp"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/radio_bt_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="10k-15k"  />
+
+
+            <RadioButton
+                android:textColor="@color/pai_dan_text"
+                android:id="@+id/rdb_twenty"
+                android:textSize="11sp"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/radio_bt_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="15k-20k" />
+
+            <RadioButton
+                android:textColor="@color/pai_dan_text"
+                android:id="@+id/rdb_out_twenty"
+                android:textSize="11sp"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/radio_bt_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="20k以上" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="16sp"
+        android:text="工作内容"
+        style="@style/tx_title"/>
+    <EditText
+        android:id="@+id/edx_work_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edx_resume_bg"
+        android:gravity="start"
+        android:hint="请输入 至少6个字"
+        android:maxLines="6"
+        android:minLines="6"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/tx_text_size_small" />
+
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/btn_common_small_corner"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="保存" />
+
+</LinearLayout>

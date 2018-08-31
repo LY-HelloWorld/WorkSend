@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_layout"/>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="上传视频"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/upLoadVideoImage"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/up_load_video" />
+
+
+        <TextView
+            android:textColor="@color/blue_green"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/tx_text_size_sSmall"
+            android:text="视频不能大于50M"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/tx_text_size_sSmall"
+        android:text="友情提示 : 15s以上小视频，精准展示自己真实职场形象，简历被查看的次数会更高！"
+        android:textColor="@color/blue_green"
+        android:layout_marginLeft="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="上传封面"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/upLoadImageFengMian"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/up_load_feng_mian" />
+
+          <TextView
+        android:paddingRight="20dp"
+        android:textColor="@color/blue_green"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/tx_text_size_sSmall"
+        android:text="图片不能大于5M"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_log_corner_bg"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_width="220dp"
+        android:layout_height="40dp" />
+
+
+</LinearLayout>

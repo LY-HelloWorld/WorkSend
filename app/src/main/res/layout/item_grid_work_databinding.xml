@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="history"
+            type="com.a51zhipaiwang.worksend.Personal.entity.HistorySearch"/>
+        
+    </data>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:tag="@{history}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@{history.recentSearch}"
+            android:id="@+id/three_stage_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/radio_check_false_bg"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+</layout>

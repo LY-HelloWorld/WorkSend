@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="bt_height_common">40dp</dimen>
+    <dimen name="bt_width_common">220dp</dimen>
+    <dimen name="bt_text_size_common">12sp</dimen>
+
+    <dimen name="tx_text_size_big">20sp</dimen>
+    <dimen name="tx_text_size_small">12sp</dimen>
+    <dimen name="tx_text_size_sSmall">8sp</dimen>
+    <dimen name="tx_text_size_sbig">22sp</dimen>
+    <dimen name="title_layout_height">44dp</dimen>
+
+    <dimen name="img_log_choice_height">100dp</dimen>
+    <dimen name="img_log_choice_width">100dp</dimen>
+
+    <dimen name="small_corner">5dp</dimen>
+    <dimen name="common_corner">10dp</dimen>
+    <dimen name="big_corner">20dp</dimen>
+    <dimen name="small_gap_width">1dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

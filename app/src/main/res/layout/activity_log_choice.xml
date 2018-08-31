@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:src="@drawable/img_log_choice_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <ImageView
+        android:id="@+id/img_need_work"
+        android:src="@drawable/worker"
+        style="@style/img_log_choice" />
+
+    <TextView
+        android:text="@string/want_get_work"
+        style="@style/tx_log_choice"/>
+
+    <TextView
+        android:textColor="@color/textColor"
+        android:textSize="12sp"
+        android:text="视频求职 面试就有钱"
+        style="@style/tx_log_choice"/>
+
+    <ImageView
+        android:id="@+id/img_recruit"
+        android:src="@drawable/boss"
+        style="@style/img_log_choice" />
+
+    <TextView
+        android:text="@string/recruit"
+        style="@style/tx_log_choice"/>
+
+    <TextView
+        android:textColor="@color/textColor"
+        android:textSize="12sp"
+        android:text="一键派单 精准匹配"
+        style="@style/tx_log_choice"/>
+
+</LinearLayout>

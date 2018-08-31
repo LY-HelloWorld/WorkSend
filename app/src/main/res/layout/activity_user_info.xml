@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_layout"/>
+
+
+    <View
+        android:background="@color/blue_green"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/img_userinfo_bg"
+        android:layout_width="300dp"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:textSize="12sp"
+                android:gravity="right"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                android:text="姓\u3000\u3000名:"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="12sp"
+                android:hint="请输入姓名"
+                android:id="@+id/tx_user_name"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:textSize="12sp"
+                android:gravity="right"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                android:text="所在城市:"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="12sp"
+                android:hint="请输入城市"
+                android:id="@+id/tx_user_city"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:textSize="12sp"
+                android:gravity="right"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                android:text="出生日期:"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="12sp"
+                android:hint="请输入格式如2018-1-1"
+                android:id="@+id/tx_user_brithday"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"  />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cimg_head"
+        android:background="@drawable/img_userinfo_head_bg"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-230dp"
+        android:src="@drawable/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp"
+        android:layout_width="150dp"
+        android:text="@string/edit"
+        style="@style/btn_common_big_corner"/>
+
+</LinearLayout>

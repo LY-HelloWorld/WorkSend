@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="findwork"
+            type="com.a51zhipaiwang.worksend.Personal.entity.FindWork"/>
+    </data>
+
+    <LinearLayout
+        android:descendantFocusability="blocksDescendants"
+        android:tag="@{findwork.distributeLeafletsDetailsId}"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="59dp">
+
+            <ImageView
+                android:visibility="gone"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="59dp"
+                android:layout_height="59dp" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:text="@{findwork.zwName}"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/tx_money"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/text_hui"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:text="@{findwork.enterpriseName}"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/text_hui"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:minWidth="60dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="@{findwork.city}"
+                    android:gravity="center"
+                    android:textColor="@color/text_hui"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+
+                <Button
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:id="@+id/readJianLiBt"
+                    android:textSize="10sp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/jian_li_item_bt"
+                    android:text="@string/read"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:background="@color/hui"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+
+
+</layout>

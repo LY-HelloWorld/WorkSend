@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="24dp"
+        android:layout_height="24dp">
+        <ImageView
+            android:layout_margin="1.5dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/tal_image"
+            android:layout_width="21dp"
+            android:layout_height="21dp" />
+
+        <ImageView
+            android:id="@+id/messageRedImage"
+            android:visibility="gone"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/messege" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:textColor="@drawable/tal_text_back"
+        android:text="首页"
+        android:id="@+id/tal_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

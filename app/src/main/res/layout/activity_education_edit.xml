@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <include
+                layout="@layout/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tx_title"
+                    android:layout_width="wrap_content"
+                    android:text="学校名称:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edx_school_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:hint="请输入学校名称"
+                    style="@style/edx_resume" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tx_title"
+                    android:layout_width="wrap_content"
+                    android:text="专\u3000\u3000业:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edx_major"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:hint="请输入专业"
+                    style="@style/edx_resume"  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tx_title"
+                    android:layout_width="wrap_content"
+                    android:text="学\u3000\u3000制:"
+                    android:textSize="16sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rag_type"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/allDayRadioBt"
+                        android:textSize="11sp"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/radio_bt_bg"
+                        android:textColor="@color/pai_dan_text"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="全日制" />
+
+
+                    <RadioButton
+                        android:id="@+id/notAllDayRadioBt"
+                        android:textSize="11sp"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/pai_dan_text"
+                        android:background="@drawable/radio_bt_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="非全日制" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tx_title"
+                    android:layout_width="wrap_content"
+                    android:text="入学时间:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:maxLength="10"
+                    android:id="@+id/edx_come_school"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:hint="请输入时间格式如：2018-01-01"
+                    style="@style/edx_resume" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tx_title"
+                    android:layout_width="wrap_content"
+                    android:text="毕业时间:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:maxLength="10"
+                    android:id="@+id/edx_graducation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:hint="请输入时间格式如：2018-01-01"
+                    style="@style/edx_resume"  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tx_title"
+                    android:layout_width="wrap_content"
+                    android:text="专业类别:"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edx_major_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:hint="请输入专业类别"
+                    style="@style/edx_resume" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tx_title"
+                    android:layout_width="wrap_content"
+                    android:text="学校等级:"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rag_school_type"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/twoRadioBt"
+                        android:textSize="11sp"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/radio_bt_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="211" />
+
+
+                    <RadioButton
+                        android:id="@+id/nineRadioBt"
+                        android:textSize="11sp"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/radio_bt_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="985" />
+
+                    <RadioButton
+                        android:id="@+id/commonRadioBt"
+                        android:textSize="11sp"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/radio_bt_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="普通高校" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tx_title"
+                    android:layout_width="wrap_content"
+                    android:text="在校经历:"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edx_school_experince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/edx_resume_bg"
+                android:gravity="start"
+                android:hint="在校经历 至少6个字"
+                android:maxLines="6"
+                android:minLines="6"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:textSize="@dimen/tx_text_size_small" />
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/btn_common_small_corner"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="保存" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lv_title_layout"
+        android:background="@color/blue_green"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_layout_height">
+
+        <ImageView
+            style="@style/img_return"
+            android:id="@+id/return_image" />
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="企业管理中心"
+            android:gravity="center"
+            android:id="@+id/tilte_text"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:visibility="invisible"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/personal_center"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:divider="@color/hui"
+        android:dividerHeight="5dp"
+        android:scrollbars="none"
+        android:id="@+id/workManagerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</LinearLayout>

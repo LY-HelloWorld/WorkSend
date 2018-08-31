@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_layout"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:id="@+id/tx_enterprise_name"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="@dimen/tx_text_size_small"
+            android:id="@+id/tx_location"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tx_money"
+        android:textSize="@dimen/tx_text_size_small"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+    <TextView
+        android:id="@+id/tx_work_name"
+        android:textSize="@dimen/tx_text_size_small"
+        android:textColor="@color/textColor"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="@color/textColor"
+        android:text="职位描述"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tx_work_description"
+        android:minLines="15"
+        android:maxLines="15"
+        android:textSize="@dimen/tx_text_size_small"
+        android:textColor="@color/text_hui"
+        android:layout_marginTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:text="取消订单"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            style="@style/btn_common_big_corner_cancel"/>
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:text="抢单"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            style="@style/btn_common_big_corner"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

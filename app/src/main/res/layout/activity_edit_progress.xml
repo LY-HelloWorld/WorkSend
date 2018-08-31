@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/title_layout"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="项目名称:"
+            style="@style/tx_title"/>
+
+        <EditText
+            android:id="@+id/edx_progress_name"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:hint="请输入项目名称"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            style="@style/edx_resume"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="项目开始时间:"
+            style="@style/tx_title"/>
+
+        <EditText
+            android:maxLength="10"
+            android:id="@+id/edx_progress_start_time"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:hint="请输入时间格式：2018-01-01"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            style="@style/edx_resume" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="项目结束时间:"
+            style="@style/tx_title"/>
+
+        <EditText
+            android:maxLength="10"
+            android:id="@+id/edx_progress_end_time"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:hint="请输入时间格式：2018-01-01"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            style="@style/edx_resume" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="职位:"
+            style="@style/tx_title"/>
+
+        <EditText
+            android:id="@+id/edx_work"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            style="@style/edx_resume"
+            android:hint="请输入职位"
+            android:layout_weight="1"
+            android:layout_width="0dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="16sp"
+        android:text="主要职责"
+        style="@style/tx_title"/>
+
+    <EditText
+        android:id="@+id/edx_main_duty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edx_resume_bg"
+        android:gravity="start"
+        android:hint="主要职责 至少6个字"
+        android:maxLines="6"
+        android:minLines="6"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/tx_text_size_small" />
+
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/btn_common_small_corner"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="保存" />
+
+</LinearLayout>

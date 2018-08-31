@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:background="@drawable/mine_bg"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/img_business_logo"
+                    android:src="@drawable/icon_round"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp" />
+
+                <TextView
+                    android:id="@+id/tx_business_name"
+                    android:textColor="@color/white"
+                    android:text="@string/beijing"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/business_ren_zheng_bg"
+                    android:layout_width="75dp"
+                    android:layout_height="20dp">
+                    
+                    <ImageView
+                        android:id="@+id/img_identification"
+                        android:src="@mipmap/ren_zheng"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp" />
+
+                    <TextView
+                        android:id="@+id/tx_identification"
+                        android:textColor="@color/textColor"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/wei_ren_zheng"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/tx_title"
+                android:text="@string/tong_xin_guan_li"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/pai_dan_edit" />
+
+            <LinearLayout
+                android:id="@+id/jianLiManagerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/white">
+
+                <ImageView
+                    style="@style/img_title_left"
+                    android:src="@mipmap/jian_li_guan_li_icon" />
+
+                <TextView
+                    style="@style/tx_sub_title"
+                    android:text="@string/jian_li_guan_li" />
+
+                <ImageView
+                    style="@style/img_title_right_arrow"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:background="@color/pai_dan_edit" />
+
+            <LinearLayout
+                android:id="@+id/workMangerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/white">
+
+                <ImageView
+                    style="@style/img_title_left"
+                    android:src="@mipmap/zhi_wei_icon" />
+
+                <TextView
+                    style="@style/tx_sub_title"
+                    android:text="@string/zhi_wei_guan_li" />
+
+                <ImageView
+                    style="@style/img_title_right_arrow"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/pai_dan_edit"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <TextView
+                style="@style/tx_title"
+                android:text="@string/hui_yuan_zhong_xin" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/pai_dan_edit" />
+
+            <LinearLayout
+                android:id="@+id/lv_money"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/white">
+
+                <ImageView
+                    style="@style/img_title_left"
+                    android:src="@mipmap/company4" />
+
+                <TextView
+                    style="@style/tx_sub_title"
+                    android:text="@string/qian_bao" />
+
+                <ImageView
+                    style="@style/img_title_right_arrow"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:background="@color/pai_dan_edit" />
+
+            <LinearLayout
+                android:id="@+id/lv_become_member"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/white">
+
+                <ImageView
+                    style="@style/img_title_left"
+                    android:src="@mipmap/company5" />
+
+                <TextView
+                    style="@style/tx_sub_title"
+                    android:text="@string/cheng_wei_hui_yuan" />
+
+                <ImageView
+                    style="@style/img_title_right_arrow"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:background="@color/pai_dan_edit" />
+
+            <LinearLayout
+                android:id="@+id/businessInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/white">
+
+                <ImageView
+                    style="@style/img_title_left"
+                    android:src="@mipmap/company6" />
+
+                <TextView
+                    style="@style/tx_sub_title"
+                    android:text="@string/qi_ye_xin_xi" />
+
+                <ImageView
+                    style="@style/img_title_right_arrow"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:background="@color/pai_dan_edit"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+
+            <TextView
+                android:text="@string/ke_fu_kan_kui"
+                style="@style/tx_title" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/pai_dan_edit" />
+
+            <LinearLayout
+                android:id="@+id/businessIndentifyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/white">
+
+                <ImageView
+                    style="@style/img_title_left"
+                    android:src="@mipmap/company7" />
+
+                <TextView
+                    style="@style/tx_sub_title"
+                    android:text="@string/qi_ye_ren_zheng" />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/lin_qu_zhuan_shu_quan_yi" />
+
+
+                <ImageView
+                    style="@style/img_title_right_arrow"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:background="@color/pai_dan_edit" />
+
+            <LinearLayout
+                android:id="@+id/lv_service_activity"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/white">
+
+                <ImageView
+                    style="@style/img_title_left"
+                    android:src="@mipmap/company8" />
+
+                <TextView
+                    style="@style/tx_sub_title"
+                    android:text="@string/wo_de_ke_fu" />
+
+                <ImageView
+                    style="@style/img_title_right_arrow"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:background="@color/pai_dan_edit" />
+
+            <LinearLayout
+                android:id="@+id/setLayout"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/white">
+
+                <ImageView
+                    style="@style/img_title_left"
+                    android:src="@mipmap/company10" />
+
+                <TextView
+                    style="@style/tx_sub_title"
+                    android:text="@string/she_zhi" />
+
+
+                <ImageView
+                    style="@style/img_title_right_arrow"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:background="@color/pai_dan_edit" />
+
+            <LinearLayout
+                android:id="@+id/lv_send_back"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="@color/white">
+
+                <ImageView
+                    style="@style/img_title_left"
+                    android:src="@mipmap/company11" />
+
+                <TextView
+                    style="@style/tx_sub_title"
+                    android:text="@string/fan_kui" />
+
+                <ImageView
+                    style="@style/img_title_right_arrow"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

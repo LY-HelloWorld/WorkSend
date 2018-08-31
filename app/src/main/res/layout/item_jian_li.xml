@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="110dp">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:visibility="gone"
+            android:id="@+id/touXiangImage"
+            android:layout_gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:textColor="@color/textColor"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/moneyText"
+                    android:textSize="10sp"
+                    android:textColor="@color/red"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/infomationsText"
+                    android:textColor="@color/jian_li_text"
+                    android:textSize="9sp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/choiceImage"
+                android:src="@mipmap/choice_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/distanceText"
+            android:textSize="8sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+
+        <TextView
+            android:id="@+id/workStateText"
+            android:textColor="@color/text_hui"
+            android:textSize="10sp"
+            android:background="@drawable/jian_li_text_bg"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_width="50dp"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/workText"
+            android:textColor="@color/text_hui"
+            android:textSize="10sp"
+            android:background="@drawable/jian_li_text_bg"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="bottom"
+            android:layout_width="50dp"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/cityText"
+            android:textSize="10sp"
+            android:textColor="@color/text_hui"
+            android:background="@drawable/jian_li_text_bg"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="bottom"
+            android:layout_width="50dp"
+            android:layout_height="15dp" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+
+
+        <Button
+            android:id="@+id/readJianLiBt"
+            android:textSize="10sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:background="@drawable/jian_li_item_bt"
+            android:text="@string/read_jian_li"
+            android:layout_width="60dp"
+            android:layout_height="25dp" />
+        
+        <Button
+            android:visibility="gone"
+            android:id="@+id/deleteJianLiBt"
+            android:layout_marginLeft="20dp"
+            android:textSize="10sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/textColor"
+            android:background="@drawable/jian_li_item_bt_false"
+            android:text="@string/delete"
+            android:layout_width="60dp"
+            android:layout_height="25dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="14dp"
+        android:background="@color/pai_dan_edit"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

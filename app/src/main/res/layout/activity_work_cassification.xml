@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@mipmap/search_bg"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+
+        <LinearLayout
+            android:id="@+id/returnLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:src="@mipmap/return_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginTop="6dp"
+                android:text="@string/return_text"
+                android:layout_width="63dp"
+                android:layout_height="25dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/work_classfy_edit_bg"
+            android:layout_marginTop="6dp"
+            android:layout_width="160dp"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:id="@+id/searchImage"
+                android:paddingLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/serch2"
+                android:layout_width="30dp"
+                android:layout_height="15dp" />
+
+            <EditText
+                android:imeOptions="actionSearch"
+                android:id="@+id/searchEdit"
+                android:cursorVisible="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:paddingLeft="10dp"
+                android:textSize="10sp"
+                android:hint="@string/work_choice"
+                android:singleLine="true"
+                android:layout_marginRight="15dp"
+                android:background="@color/translate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:listSelector="@drawable/classfy_text_bg"
+            android:background="@color/hui"
+            android:scrollbars="none"
+            android:id="@+id/workList"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+
+
+        <FrameLayout
+            android:id="@+id/vorkFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

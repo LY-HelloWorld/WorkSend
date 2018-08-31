@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/lv_bg"
+        android:orientation="vertical"
+        android:background="@drawable/img_log_bg"
+        android:layout_width="match_parent"
+        android:layout_height="242dp">
+
+        <LinearLayout
+            android:id="@+id/lv_title_layout"
+            android:background="@color/translate"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_layout_height">
+
+            <ImageView
+                style="@style/img_return"
+                android:id="@+id/return_image" />
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="注册"
+                android:gravity="center"
+                android:id="@+id/tilte_text"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:visibility="invisible"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/personal_center"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        style="@style/login_register_lin_bg">
+
+        <ImageView
+            android:src="@drawable/img_phone_number"
+            android:layout_marginRight="9dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <EditText
+            style="@style/edx_bg"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="11"
+            android:digits="0123456789"
+            android:id="@+id/edx_log_number"
+            android:hint="请输入手机号"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tx_phone_error_hint"
+        android:visibility="invisible"
+        android:text="手机号输入错误"
+        style="@style/tx_log_register_hint"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:layout_marginRight="0dp"
+            style="@style/login_register_lin_bg">
+
+            <ImageView
+                android:src="@drawable/img_password"
+                android:layout_marginRight="9dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+            <EditText
+                style="@style/edx_bg"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLength="11"
+                android:digits="0123456789"
+                android:id="@+id/edx_verficode"
+                android:hint="请输入验证码"
+                android:background="@color/translate"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bt_log_corner_bg"
+            android:textSize="12sp"
+            android:id="@+id/tx_verificoe"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:layout_marginRight="30dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tx_verify_error_hint"
+        android:visibility="invisible"
+        android:text="验证码输入错误"
+        style="@style/tx_log_register_hint"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        style="@style/login_register_lin_bg">
+
+        <ImageView
+            android:src="@drawable/img_password"
+            android:layout_marginRight="9dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <EditText
+            style="@style/edx_bg"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="11"
+            android:digits="0123456789"
+            android:id="@+id/edx_log_password"
+            android:hint="请输入密码"
+            android:background="@color/translate"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tx_password_error_hint"
+        android:visibility="invisible"
+        android:text="密码输入错误"
+        style="@style/tx_log_register_hint"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        style="@style/login_register_lin_bg">
+
+        <ImageView
+            android:src="@drawable/img_password"
+            android:layout_marginRight="9dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+        <EditText
+            style="@style/edx_bg"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="11"
+            android:digits="0123456789"
+            android:id="@+id/edx_re_log_password"
+            android:hint="请再次输入密码"
+            android:background="@color/translate"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tx_re_password_error_hint"
+        android:visibility="invisible"
+        android:text="两次密码输入不同"
+        style="@style/tx_log_register_hint"/>
+
+    <Button
+        android:id="@+id/btn_log"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_log_corner_bg"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="34dp" />
+
+
+    <TextView
+        android:id="@+id/tx_register_arrgement"
+        android:layout_gravity="bottom"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/log_aggrement"
+        android:textColor="@color/blue_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/mine_big_bg"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <ImageView
+            android:src="@mipmap/return_image"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/return_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/tx_business_name"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="我的会员"
+        style="@style/tx_title" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/pai_dan_edit" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/member_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:textColor="@color/blue_green"
+            android:id="@+id/tx_grade"
+            android:layout_marginLeft="3dp"
+            android:gravity="bottom"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/tx_current_info"
+            android:textSize="12sp"
+            android:paddingRight="15dp"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbar_member"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:progressDrawable="@drawable/prgress_bar_member"
+        android:max="4800"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/tx_text_size_small"
+            android:text="v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/tx_text_size_small"
+            android:text="v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/tx_text_size_small"
+            android:text="v3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/tx_text_size_small"
+            android:text="v4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/tx_text_size_small"
+            android:text="v5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/tx_text_size_small"
+            android:text="v6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/tx_text_size_small"
+            android:text="v7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tx_gap_next"
+        android:textColor="@color/text_hui"
+        android:layout_marginLeft="15dp"
+        android:gravity="bottom"
+        android:layout_gravity="center_vertical"
+        android:text="距下一等级还差1000"
+        android:textSize="@dimen/tx_text_size_sSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:background="@color/hui"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+
+    <TextView
+        android:text="我的特权"
+        style="@style/tx_title" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/pai_dan_edit" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="60dp">
+
+            <ImageView
+
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/identity"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                style="@style/tx_member"
+                android:text="身份铭牌"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/accurate"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                style="@style/tx_member"
+                android:text="精准匹配"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/service"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                style="@style/tx_member"
+                android:text="专属客服"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/refund"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                style="@style/tx_member"
+                android:text="急速退款"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:textSize="@dimen/tx_text_size_small"
+        android:text="其他功能暂未开放 敬请期待"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

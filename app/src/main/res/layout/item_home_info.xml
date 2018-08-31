@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="80dp">
+
+        <TextView
+            android:text="职场必知知识"
+            android:textSize="14sp"
+            android:id="@+id/tx_info_name"
+            style="@style/tx_title"/>
+
+        <TextView
+            android:id="@+id/tx_info_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="升职路上升职路上升职路上升职路上升职路上升职路上升职路上升职路上"
+            android:layout_height="30dp"
+            android:textSize="@dimen/tx_text_size_small"
+            style="@style/tx_title"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_info"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon"
+        android:layout_gravity="center_vertical"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+</LinearLayout>

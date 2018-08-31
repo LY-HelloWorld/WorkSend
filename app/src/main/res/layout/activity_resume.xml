@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/img_personal_upload"
+                android:id="@+id/img_upload_video"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="姓名:"
+                    style="@style/tx_title"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/edx_name"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="性别:"
+                    style="@style/tx_title"/>
+
+                <RadioGroup
+                    android:id="@+id/rag_sex"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/manRadioBt"
+                        android:textSize="11sp"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/radio_bt_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/man" />
+
+
+                    <RadioButton
+                        android:id="@+id/wemanRadioBt"
+                        android:textSize="11sp"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/radio_bt_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/weman" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="年龄:"
+                    style="@style/tx_title"/>
+
+                <EditText
+                    android:id="@+id/edx_age"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:hint="请输入"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="家庭住址:"
+                    style="@style/tx_title"/>
+
+                <EditText
+                    android:id="@+id/edx_location"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:hint="请输入"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/hui"/>
+
+
+            <LinearLayout
+                android:id="@+id/lv_edit_need_work"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:text="求职意愿"
+                    style="@style/tx_title"/>
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:paddingRight="15dp"
+                    android:gravity="center_vertical"
+                    android:text="编辑"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="求职类型:"
+                    style="@style/tx_title"/>
+
+                <TextView
+                    android:id="@+id/tx_work_type"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/btn_cancel"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="期望职业:"
+                    style="@style/tx_title"/>
+
+                <TextView
+                    android:id="@+id/tx_expect_work"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="@drawable/btn_cancel"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="工作经验:"
+                    style="@style/tx_title"/>
+
+                <TextView
+                    android:id="@+id/tx_work_experence"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="@drawable/btn_cancel"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="期望薪资:"
+                    style="@style/tx_title"/>
+
+                <TextView
+                    android:id="@+id/tx_expect_money"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="@drawable/btn_cancel"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="期望城市:"
+                    style="@style/tx_title"/>
+
+                <TextView
+                    android:id="@+id/tx_expect_city"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="@drawable/btn_cancel"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="最高学历:"
+                    style="@style/tx_title"/>
+
+                <TextView
+                    android:id="@+id/tx_education"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="@drawable/btn_cancel"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="工作状态:"
+                    style="@style/tx_title"/>
+
+                <TextView
+                    android:id="@+id/tx_work_state"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:background="@drawable/btn_cancel"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textSize="16sp"
+                android:text="教育背景"
+                style="@style/tx_title"/>
+
+            <LinearLayout
+                android:id="@+id/lv_edu_content"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_add_edu"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@drawable/img_add"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_marginLeft="10dp"
+                    android:text="添加教育背景"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <TextView
+                android:textSize="16sp"
+                android:text="工作经历"
+                style="@style/tx_title"/>
+            <LinearLayout
+                android:id="@+id/lv_work_content"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_add_work"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@drawable/img_add"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_marginLeft="10dp"
+                    android:text="添加工作经历"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <TextView
+                android:textSize="16sp"
+                android:text="项目经验"
+                style="@style/tx_title"/>
+
+            <LinearLayout
+                android:id="@+id/lv_progress_content"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_add_progress"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <ImageView
+                    android:src="@drawable/img_add"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:textColor="@color/textColor"
+                    android:layout_marginLeft="10dp"
+                    android:text="添加项目经验"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/hui"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:text="专业技能"
+                style="@style/tx_title"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/edx_skill_one"
+                    android:hint="请输入"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/edx_skill_two"
+                    android:hint="请输入"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:id="@+id/edx_skill_three"
+                    android:hint="请输入"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="@dimen/tx_text_size_small"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"  />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edx_skill_description"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/tx_text_size_small"
+                android:hint="其他技能"
+                android:gravity="start"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/white"
+                android:maxLines="10"
+                android:minLines="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="16sp"
+                android:text="获得奖项"
+                style="@style/tx_title"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="获得奖项:"
+                    style="@style/tx_title"/>
+
+                <EditText
+                    android:id="@+id/edx_awards_one"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:hint="请输入"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="获得奖项:"
+                    style="@style/tx_title"/>
+
+                <EditText
+                    android:id="@+id/edx_awards_two"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:hint="请输入"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:text="获得奖项:"
+                    style="@style/tx_title"/>
+
+                <EditText
+                    android:id="@+id/edx_awards_three"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:hint="请输入"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginBottom="40dp"
+                android:id="@+id/btn_save"
+                style="@style/btn_common_small_corner"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="保存" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="clicklistener"
+            type="android.view.View.OnClickListener"/>
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_layout_height"
+            android:background="@color/blue_green"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/lv_personal_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spn_stype"
+                    android:entries="@array/search_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/edx_search"
+                    android:imeOptions="actionSearch"
+                    style="@style/edx_bg_common"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:hint="@string/search_work_business"
+                    android:singleLine="true" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lv_choice_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:onClick="@{clicklistener}"
+                    android:id="@+id/tx_cancel"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="取消"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tx_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/search_history" />
+
+            <ImageView
+                android:padding="7dp"
+                android:id="@+id/img_delete_history"
+                android:onClick="@{clicklistener}"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/img_delete" />
+
+        </LinearLayout>
+
+
+        <GridView
+            android:horizontalSpacing="15dp"
+            android:verticalSpacing="15dp"
+            android:id="@+id/gdv_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scrollbars="none">
+
+        </GridView>
+
+        <TextView
+            android:visibility="gone"
+            style="@style/tx_title"
+            android:text="@string/hot_search" />
+
+        <GridView
+            android:visibility="gone"
+            android:horizontalSpacing="15dp"
+            android:verticalSpacing="15dp"
+            android:id="@+id/gdv_hot_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scrollbars="none">
+
+        </GridView>
+
+    </LinearLayout>
+
+</layout>

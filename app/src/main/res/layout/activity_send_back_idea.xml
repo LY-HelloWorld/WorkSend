@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/f4_gray"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_layout"/>
+
+    <EditText
+        android:id="@+id/edx_email"
+        android:textSize="@dimen/tx_text_size_small"
+        android:singleLine="true"
+        android:padding="10dp"
+        android:hint="请留下您的邮箱。"
+        android:background="@drawable/edx_resume_bg"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edx_content"
+        android:gravity="left"
+        android:textSize="@dimen/tx_text_size_small"
+        android:padding="10dp"
+        android:hint="告诉我们您所希望看到的改进或是您所遇到的问题。"
+        android:background="@drawable/edx_resume_bg"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:textColor="@color/white"
+        android:text="确定"
+        android:background="@drawable/btn_small_corner"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</LinearLayout>

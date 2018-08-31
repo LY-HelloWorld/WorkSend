@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:background="@drawable/img_money_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/title_layout"/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:text="我的余额"
+            android:gravity="center"
+            style="@style/tx_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="0.00"
+            android:id="@+id/tx_money"
+            android:gravity="center"
+            android:textSize="30sp"
+            style="@style/tx_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_recharge"
+        android:text="充值"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        style="@style/bt_sure_bg"
+        android:layout_width="match_parent" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_withdraw"
+        android:text="提现到微信"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        style="@style/bt_cancel_bg"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:checked="true"
+            android:id="@+id/checkbox"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/check_bt"
+            android:layout_width="12dp"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:textSize="9sp"
+            android:id="@+id/service_text"
+            android:textColor="@color/blue_green"
+            android:layout_marginLeft="6dp"
+            android:text="我已同意《职派协议》"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

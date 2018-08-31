@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/hui"
+        android:text="@string/current_location"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:id="@+id/currentLocationLayout"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:layout_gravity="left"
+            android:textColor="@color/text_hui"
+            android:id="@+id/current_location_btn"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:id="@+id/dingWeiLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:padding="3dp"
+                android:src="@mipmap/ding_wei_image"
+                android:layout_gravity="right|center"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textColor="@color/text_hui"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_marginRight="20dp"
+                android:text="@string/re_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

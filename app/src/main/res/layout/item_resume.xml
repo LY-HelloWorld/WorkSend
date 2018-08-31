@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="产品经理"
+                android:id="@+id/tx_work"
+                android:textColor="@color/textColor"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:text="8k-15k"
+                android:id="@+id/tx_salary"
+                android:textSize="12sp"
+                android:textColor="@color/red"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <Button
+            android:clickable="false"
+            android:id="@+id/readJianLiBt"
+            android:textSize="10sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/jian_li_item_bt"
+            android:text="@string/read"
+            android:layout_width="50dp"
+            android:layout_height="25dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:background="@color/pai_dan_edit"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="易创吧"
+            android:paddingLeft="15dp"
+            android:id="@+id/tx_company"
+            android:textColor="@color/textColor"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:text="北京朝阳"
+            android:paddingRight="15dp"
+            android:id="@+id/tx_location"
+            android:textSize="12sp"
+            android:textColor="@color/textColor"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+</LinearLayout>

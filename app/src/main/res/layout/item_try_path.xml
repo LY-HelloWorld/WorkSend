@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/textColor"
+            android:text="试岗时间："
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tx_try_path_time"
+            android:gravity="center_vertical"
+            android:text="2019-01-01"
+            android:textSize="18sp"
+            android:textColor="@color/textColor"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tx_try_path_state"
+            android:paddingRight="20dp"
+            android:textColor="@color/blue_green"
+            android:textSize="18sp"
+            android:text="试岗中"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="20dp"
+        android:background="@color/hui"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tx_try_path_business_name"
+            android:textSize="18sp"
+            android:textColor="@color/textColor"
+            android:text="易创吧科技发展公司"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/textColor"
+            android:text="薪资标准："
+            android:paddingLeft="20dp"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tx_trp_path_money"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:text="80元/天"
+            android:layout_width="wrap_content"
+            android:paddingRight="20dp"
+            android:gravity="right|center_vertical"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <View
+        android:background="@color/hui"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_layout_height">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:padding="3dp"
+            android:src="@mipmap/black_return"
+            android:id="@+id/return_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            android:text="@string/choice_city"
+            android:gravity="center"
+            android:id="@+id/tilte_text"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:visibility="invisible"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/personal_center"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="40dp"
+        android:id="@+id/cityRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <com.a51zhipaiwang.worksend.View.QuickChoiceCityView
+        android:layout_marginTop="40dp"
+        android:id="@+id/quickChoiceCityView"
+        android:layout_marginRight="3dp"
+        android:layout_gravity="right"
+        android:layout_width="20dp"
+        android:layout_height="400dp"/>
+
+
+
+</FrameLayout>
+

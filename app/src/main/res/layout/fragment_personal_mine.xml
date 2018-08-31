@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/mine_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/icon_round"
+            android:id="@+id/circle_image"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:text="游客"
+            android:id="@+id/tx_user_name"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/img_person_info"
+            style="@style/img_title_left"/>
+        <TextView
+            android:text="@string/personal_info"
+            style="@style/tx_sub_title"/>
+        <ImageView
+            style="@style/img_title_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        style="@style/view_divider_bg"/>
+
+    <LinearLayout
+        android:id="@+id/lv_user_resume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/img_personal_resume"
+            style="@style/img_title_left"/>
+        <TextView
+            android:text="@string/user_resume"
+            style="@style/tx_sub_title"/>
+        <ImageView
+            style="@style/img_title_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        style="@style/view_divider_bg"/>
+
+    <LinearLayout
+        android:id="@+id/lv_user_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/img_personal_money"
+            style="@style/img_title_left"/>
+        <TextView
+            android:text="@string/user_money"
+            style="@style/tx_sub_title"/>
+        <ImageView
+            style="@style/img_title_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        style="@style/view_divider_bg"/>
+
+    <LinearLayout
+        android:id="@+id/lv_try_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/img_personal_try_path"
+            style="@style/img_title_left"/>
+        <TextView
+            android:text="@string/try_path"
+            style="@style/tx_sub_title"/>
+        <ImageView
+            style="@style/img_title_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        style="@style/view_divider_bg"/>
+
+    <LinearLayout
+        android:id="@+id/lv_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@mipmap/company10"
+            style="@style/img_title_left"/>
+        <TextView
+            android:text="@string/she_zhi"
+            style="@style/tx_sub_title"/>
+        <ImageView
+            style="@style/img_title_right_arrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        style="@style/view_divider_bg"/>
+
+</LinearLayout>

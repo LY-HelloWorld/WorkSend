@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_layout"/>
+
+
+    <View
+        android:background="@color/blue_green"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/img_userinfo_bg"
+        android:layout_width="300dp"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:textSize="@dimen/tx_text_size_small"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:text="姓\u3000\u3000名:"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:id="@+id/edx_user_name"
+                android:singleLine="true"
+                android:paddingLeft="3dp"
+                android:textSize="@dimen/tx_text_size_small"
+                android:hint="请输入姓名"
+                android:background="@color/translate"
+                android:layout_width="120dp"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:textSize="@dimen/tx_text_size_small"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:text="所在城市:"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+
+            <TextView
+                android:id="@+id/tx_user_city"
+                android:singleLine="true"
+                android:paddingLeft="3dp"
+                android:textSize="@dimen/tx_text_size_small"
+                android:hint="请选择城市"
+                android:background="@color/translate"
+                android:layout_width="120dp"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:textSize="@dimen/tx_text_size_small"
+                android:gravity="center"
+                android:id="@+id/tx_user_name"
+                android:textColor="@color/textColor"
+                android:text="出生日期:"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <EditText
+                android:hint="请输入格式如2018-1-1"
+                android:id="@+id/edx_user_brithday"
+                android:singleLine="true"
+                android:paddingLeft="3dp"
+                android:textSize="@dimen/tx_text_size_small"
+                android:background="@color/translate"
+                android:layout_width="120dp"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cimg_head"
+        android:background="@drawable/img_userinfo_head_bg"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-230dp"
+        android:src="@mipmap/up_load_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp"
+        android:layout_width="150dp"
+        android:text="@string/sure"
+        style="@style/btn_common_big_corner"/>
+
+</LinearLayout>

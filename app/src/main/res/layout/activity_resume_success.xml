@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/title_layout"/>
+
+
+    <ImageView
+        android:src="@drawable/img_resume_success"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:background="@color/translate"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="简历已发布至职派简历库，被企业查看的几率杠杠的"
+        style="@style/tx_title"/>
+
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_log_corner_bg"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="220dp"
+        android:layout_height="40dp" />
+
+
+</LinearLayout>

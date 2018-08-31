@@ -1,0 +1,219 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/blue_green</item>
+    </style>
+
+
+    <style name="bt_sure_bg">
+        <item name="android:textSize">@dimen/bt_text_size_common</item>
+        <item name="android:background">@drawable/jian_li_item_bt</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">@dimen/bt_height_common</item>
+    </style>
+
+
+    <style name="bt_cancel_bg">
+        <item name="android:textSize">@dimen/bt_text_size_common</item>
+        <item name="android:background">@drawable/btn_cancel</item>
+        <item name="android:textColor">@color/blue_green</item>
+        <item name="android:layout_height">@dimen/bt_height_common</item>
+    </style>
+
+    <style name="tx_money">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/tx_text_size_sbig</item>
+
+    </style>
+
+    <style name="tx_title">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="img_title_right_arrow">
+        <item name="android:layout_width">13dp</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:src">@mipmap/black_you_jian_tou</item>
+    </style>
+
+    <style name="img_title_left">
+        <item name="android:layout_width">13dp</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+
+    <style name="tx_sub_title">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">33dp</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="tx_member">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/tx_text_size_sSmall</item>
+    </style>
+
+    <style name="img_log_choice">
+        <item name="android:layout_height">@dimen/img_log_choice_height</item>
+        <item name="android:layout_width">@dimen/img_log_choice_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <style name="tx_log_choice">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/tx_text_size_big</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="img_return">
+
+        <item name="android:src">@mipmap/return_image</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">30dp</item>
+    </style>
+
+    <style name="login_register_lin_bg">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:background">@drawable/edx_log_bg</item>
+    </style>
+
+
+    <style name="edx_bg">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/translate</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="tx_log_register_hint">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginLeft">45dp</item>
+    </style>
+
+    <style name="edx_bg_common">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="lv_personal_home">
+
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="tx_personal_home">
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/tx_text_size_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+
+    </style>
+
+    <style name="view_divider_bg">
+        <item name="android:background">@color/pai_dan_edit</item>
+    </style>
+
+    <style name="btn_common_small_corner">
+
+        <item name="android:layout_height">@dimen/bt_height_common</item>
+        <item name="android:background">@drawable/btn_small_corner</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/tx_text_size_small</item>
+
+    </style>
+
+
+    <style name="btn_common_big_corner">
+
+        <item name="android:layout_height">@dimen/bt_height_common</item>
+        <item name="android:background">@drawable/btn_big_corner</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/tx_text_size_small</item>
+
+    </style>
+
+    <style name="btn_common_big_corner_cancel">
+
+        <item name="android:layout_height">@dimen/bt_height_common</item>
+        <item name="android:background">@drawable/btn_cancel_big_corner</item>
+        <item name="android:textColor">@color/blue_green</item>
+        <item name="android:textSize">@dimen/tx_text_size_small</item>
+
+    </style>
+
+
+    <style name="btn_try_big_corner_cancel">
+
+        <item name="android:layout_height">@dimen/bt_height_common</item>
+        <item name="android:background">@drawable/btn_try_cancel_big_corner</item>
+        <item name="android:textColor">@color/blue_green</item>
+        <item name="android:textSize">@dimen/tx_text_size_small</item>
+
+    </style>
+
+    <style name="load_more">
+        <item name="android:gravity">center</item>
+        <item name="android:text">加载更多</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+
+    <style name="edx_resume">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

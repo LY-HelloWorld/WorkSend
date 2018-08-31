@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="375dp"
+    android:background="@drawable/video_alert_bg"
+    android:orientation="vertical"
+    android:scaleType="fitXY">
+
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="@string/choice_condtion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/workLinlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/choice_work"
+            android:textColor="@color/textColor" />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="12dp"
+            android:layout_height="7.8dp"
+            android:layout_marginLeft="3dp"
+            android:src="@mipmap/bottom" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/workText"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/radio_check_false_bg"
+        android:gravity="center"
+        android:hint="@string/no_choice_work"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginLeft="42dp"
+        android:gravity="center"
+        android:text="@string/sex"
+        android:textColor="@color/textColor" />
+
+
+    <RadioGroup
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/manRadioBt"
+            android:layout_width="68.75dp"
+            android:layout_height="30dp"
+            android:background="@drawable/radio_bt_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/man"
+            android:textColor="@color/pai_dan_text"
+            android:textSize="14sp" />
+
+
+        <RadioButton
+            android:id="@+id/womenRadioBt"
+            android:layout_width="68.75dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12.5dp"
+            android:background="@drawable/radio_bt_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/weman"
+            android:textColor="@color/pai_dan_text"
+            android:textSize="14sp" />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_bt_bg"
+        android:textColor="@color/white"
+        android:id="@+id/sureBt"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="@string/sure" />
+
+</LinearLayout>

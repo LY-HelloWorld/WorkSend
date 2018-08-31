@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/choice_employ_city"
+                    android:textColor="@color/textColor" />
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="12dp"
+                    android:layout_height="7.8dp"
+                    android:layout_marginLeft="3dp"
+                    android:src="@mipmap/bottom" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/cityText"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_check_false_bg"
+                android:gravity="center"
+                android:textColorHint="@color/textColor"
+                android:hint="@string/no_choice_city"
+                android:textColor="@color/textColor"
+                android:textSize="11sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/choice_work"
+                    android:textColor="@color/textColor" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="12dp"
+                    android:layout_height="7.8dp"
+                    android:layout_marginLeft="3dp"
+                    android:src="@mipmap/bottom" />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/workStatusRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/allWork"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/all_work"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/partTimeWork"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/part_time_work"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/workText"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_check_false_bg"
+                android:gravity="center"
+                android:textColorHint="@color/textColor"
+                android:hint="@string/no_choice_work"
+                android:textColor="@color/textColor"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/sex" />
+
+            <RadioGroup
+                android:id="@+id/sexRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sexNoLimitRadioBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/no_limit"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/manRadioBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/man"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/womenRadioBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/weman"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/work_experence"
+                android:textColor="@color/textColor" />
+
+            <RadioGroup
+                android:id="@+id/workExpressRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/workExpressNoLimit"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/no_limit"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/graduateRadioBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/ying_jie_sheng"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/oneYearBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/one_year"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/inThreeYearBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/three_year"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/inFiveYearBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/five_year"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/inTenYear"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="-300dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/ten_year"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/outTenYear"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/out_ten_year"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/xue_li"
+                android:textColor="@color/textColor" />
+
+            <RadioGroup
+                android:id="@+id/educationRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/noLimitStudyRadioBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/no_limit"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/highSchoolRadioBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/high_school"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/technicalSchoolRadioBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/zhong_zhuan"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/highTechnicalSchoolRadioBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/da_zhuan"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/benKeRadioBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="-300dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/ben_ke"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/suoShiRadioBt"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/shuo_shi"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/xin_zi_fan_wei"
+                android:textColor="@color/textColor" />
+
+            <RadioGroup
+                android:id="@+id/moneyRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/noLimitMoney"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/no_limit"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/fiveRMB"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/money_three"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/tenRMB"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/money_ten"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/fivtingRMB"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/money_fifting"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/twtentyRMB"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="-300dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/money_twenty"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+                <RadioButton
+                    android:id="@+id/upTewtentyRMB"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/radio_bt_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/money_up_twenty"
+                    android:textColor="@color/pai_dan_text"
+                    android:textSize="11sp" />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/shi_gang_xin_zi"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:maxLength="4"
+                android:inputType="number"
+                android:singleLine="true"
+                android:digits="0123456789"
+                android:id="@+id/workMoney"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_check_false_bg"
+                android:gravity="center"
+                android:hint="@string/input_shi_gang_xin_zi"
+                android:textColorHint="@color/textColor"
+                android:textColor="@color/textColor"
+                android:textSize="11sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/shi_gang_shi_jian"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:maxLength="2"
+                android:inputType="number"
+                android:singleLine="true"
+                android:digits="0123456789"
+                android:id="@+id/workTime"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/radio_check_false_bg"
+                android:gravity="center"
+                android:hint="@string/input_shi_gang_shi_jian"
+                android:textColorHint="@color/textColor"
+                android:textColor="@color/textColor"
+                android:textSize="11sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/bian_ji_zhi_wei_miao_shu"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:gravity="left"
+                android:padding="10dp"
+                android:id="@+id/workDescribtion"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor"
+                android:hint="@string/input_descriple"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="11sp"
+                android:lines="7"
+                android:background="@drawable/edx_resume_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:background="@drawable/radio_check_bg"
+                    android:textColor="@color/textColor"
+                    android:id="@+id/resetBt"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/reset" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:background="@drawable/rounded_bt_bg"
+                    android:textColor="@color/white"
+                    android:id="@+id/sureBt"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/pai_dan" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

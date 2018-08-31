@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:id="@+id/workTitleText"
+            android:textSize="18sp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="center_vertical"
+            android:text="月薪："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="@color/red"
+            android:id="@+id/moneyText"
+            android:paddingRight="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_location_work_manager"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:id="@+id/cityText"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:text="学历："
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:id="@+id/educationText"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:text="职位："
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:id="@+id/workText"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:text="性别："
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:id="@+id/sexText"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:text="工作地点："
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:id="@+id/workCity"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <Button
+
+            android:id="@+id/deleteJianLiBt"
+            android:background="@drawable/jian_li_item_bt_false"
+            android:text="删除"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/jian_li_item_bt"
+            android:id="@+id/editJianLiBt"
+            android:text="编辑"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

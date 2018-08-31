@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/lv_send_back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/img_send_back"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="投递反馈"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="易创吧科技有限公司邀您抢单"
+                android:id="@+id/tx_call_back"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text_hui"
+                android:textSize="@dimen/tx_text_size_small" />
+
+            <TextView
+                android:id="@+id/tx_time"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text_hui"
+                android:textSize="@dimen/tx_text_size_small" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:minWidth="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="已读"
+                android:id="@+id/tx_read"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:textColor="@color/oriange"
+                android:textSize="@dimen/tx_text_size_small" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_delete_infomation"
+            android:visibility="gone"
+            android:src="@drawable/img_delete_infomation"
+            android:layout_gravity="center_vertical"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/hui"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
