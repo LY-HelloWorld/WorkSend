@@ -51,7 +51,7 @@ public interface FindBackPasswordContract {
 
         /**
          * 展示 输入错误的提示
-         * @param type 1 账号错误， 2 验证码错误， 3 密码错误， 4 两次密码不同
+         * @param type 1 账号错误，  2 验证码错误， 3 密码错误， 4 两次密码不同
          */
         public void showTip(int type);
 
